@@ -13,6 +13,15 @@ html{
   border-radius: 20px;
   width: 80%;
   max-width: 500px;
-  overflow: hidden;
+  overflow: scroll;
   scroll-snap-type: y mandatory;
+}
+/* Hide scrollbar for chrome,safari and Opera*/
+.app__videos::-webkit-scrollbar{
+  display: none;
+}
+
+.app__videos {
+  -ms-overflow-style:none;
+  scrollbar-width:none;
 }
