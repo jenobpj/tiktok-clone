@@ -1,5 +1,6 @@
 import "./App.css";
 import Video from "./Components/Video";
+import VideoFooter from "./Components/VideoFooter";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="app__videos">
         <Video />
         <Video />
+        <VideoFooter/>
       </div>
     </div>
   );
