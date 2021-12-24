@@ -1,4 +1,5 @@
 import React from "react";
+import Ticker from "react-ticker";
 import "./VideoFooter.css";
 import MusicNoteIcon from "@material-ui/icons/MusicNote";
 function VideoFooter() {
@@ -10,6 +11,14 @@ function VideoFooter() {
 
         <div className="videoFooter__ticker">
           <MusicNoteIcon className="videoFooter__icon" />
+          <Ticker mode="smooth">
+            {({index}) => (
+              <>
+              <p>Iam the song</p>
+              </>
+            )}
+          </Ticker>
+         
         </div>
       </div>
     </div>
