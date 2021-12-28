@@ -1,6 +1,6 @@
-const express = require("express");
-const { get } = require("express/lib/response");
-const mongoose = require("mongoose");
+import express from "express" ;
+import mongoose from "mongoose";
+ import Videos from './dbModel.js'
 
 //app config
 const app = express();
@@ -11,7 +11,6 @@ const connection_url =
 
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
-  useCreateIndex: true,
   UseUnifiedTopology: true,
 });
 
